@@ -810,8 +810,8 @@
                     upgradeCosts.maxMana = Math.floor(upgradeCosts.maxMana * 1.4); 
                 }
                 if (type === 'regen') { 
-                    playerStats.manaRegen = Math.floor(playerStats.manaRegen * 1.2)
-                    upgradeCosts.regen = Math.floor(upgradeCosts.regen * 1.75); 
+                    playerStats.manaRegen += 0.15; 
+                    upgradeCosts.regen = Math.floor(upgradeCosts.regen * 1.5); 
                 }
                 if (type === 'dmg') { 
                     playerStats.smiteDmg = Math.floor(playerStats.smiteDmg * 1.2)
